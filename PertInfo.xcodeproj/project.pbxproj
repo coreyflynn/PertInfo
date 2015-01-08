@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480C9F411A5BAE6100B92836 /* PertInfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C9F401A5BAE6100B92836 /* PertInfoDetailViewController.swift */; };
+		4862BEF61A58FF6A00025B1B /* SearchablePertInfoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862BEF51A58FF6A00025B1B /* SearchablePertInfoCollectionViewController.swift */; };
+		4862BEF91A59D74D00025B1B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862BEF81A59D74D00025B1B /* Regex.swift */; };
+		488FFE511A5EC8F000E27DC5 /* API.plist in Resources */ = {isa = PBXBuildFile; fileRef = 488FFE501A5EC8F000E27DC5 /* API.plist */; };
 		48FE57721A58B28500C0A8C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE57711A58B28500C0A8C7 /* AppDelegate.swift */; };
-		48FE57741A58B28500C0A8C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE57731A58B28500C0A8C7 /* ViewController.swift */; };
 		48FE57771A58B28500C0A8C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FE57751A58B28500C0A8C7 /* Main.storyboard */; };
 		48FE57791A58B28500C0A8C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FE57781A58B28500C0A8C7 /* Images.xcassets */; };
 		48FE577C1A58B28500C0A8C7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FE577A1A58B28500C0A8C7 /* LaunchScreen.xib */; };
 		48FE57881A58B28500C0A8C7 /* PertInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE57871A58B28500C0A8C7 /* PertInfoTests.swift */; };
+		48FE57921A58B2BF00C0A8C7 /* PertInfoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE57911A58B2BF00C0A8C7 /* PertInfoCollectionViewController.swift */; };
+		48FE57961A58B6D800C0A8C7 /* PertInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE57951A58B6D800C0A8C7 /* PertInfoCell.swift */; };
+		48FE57981A58B88800C0A8C7 /* PertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE57971A58B88800C0A8C7 /* PertInfo.swift */; };
+		48FE57A61A58D9E900C0A8C7 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE57A21A58D9AE00C0A8C7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +30,61 @@
 			remoteGlobalIDString = 48FE576B1A58B28500C0A8C7;
 			remoteInfo = PertInfo;
 		};
+		48FE57A11A58D9AE00C0A8C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48FE579C1A58D9AE00C0A8C7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		48FE57A31A58D9AE00C0A8C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48FE579C1A58D9AE00C0A8C7 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		48FE57A71A58DA1800C0A8C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48FE579C1A58D9AE00C0A8C7 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		48FE57A51A58D9D100C0A8C7 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				48FE57A61A58D9E900C0A8C7 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		480C9F401A5BAE6100B92836 /* PertInfoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertInfoDetailViewController.swift; sourceTree = "<group>"; };
+		4862BEF51A58FF6A00025B1B /* SearchablePertInfoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchablePertInfoCollectionViewController.swift; sourceTree = "<group>"; };
+		4862BEF81A59D74D00025B1B /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		488FFE501A5EC8F000E27DC5 /* API.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = API.plist; sourceTree = "<group>"; };
 		48FE576C1A58B28500C0A8C7 /* PertInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PertInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FE57701A58B28500C0A8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48FE57711A58B28500C0A8C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48FE57731A58B28500C0A8C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48FE57761A58B28500C0A8C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48FE57781A58B28500C0A8C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48FE577B1A58B28500C0A8C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		48FE57811A58B28500C0A8C7 /* PertInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PertInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FE57861A58B28500C0A8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48FE57871A58B28500C0A8C7 /* PertInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PertInfoTests.swift; sourceTree = "<group>"; };
+		48FE57911A58B2BF00C0A8C7 /* PertInfoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertInfoCollectionViewController.swift; sourceTree = "<group>"; };
+		48FE57951A58B6D800C0A8C7 /* PertInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertInfoCell.swift; sourceTree = "<group>"; };
+		48FE57971A58B88800C0A8C7 /* PertInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PertInfo.swift; sourceTree = "<group>"; };
+		48FE579C1A58D9AE00C0A8C7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +126,13 @@
 		48FE576E1A58B28500C0A8C7 /* PertInfo */ = {
 			isa = PBXGroup;
 			children = (
+				480C9F401A5BAE6100B92836 /* PertInfoDetailViewController.swift */,
+				48FE57951A58B6D800C0A8C7 /* PertInfoCell.swift */,
+				48FE57971A58B88800C0A8C7 /* PertInfo.swift */,
+				48FE57911A58B2BF00C0A8C7 /* PertInfoCollectionViewController.swift */,
+				4862BEF51A58FF6A00025B1B /* SearchablePertInfoCollectionViewController.swift */,
+				4862BEF81A59D74D00025B1B /* Regex.swift */,
 				48FE57711A58B28500C0A8C7 /* AppDelegate.swift */,
-				48FE57731A58B28500C0A8C7 /* ViewController.swift */,
 				48FE57751A58B28500C0A8C7 /* Main.storyboard */,
 				48FE57781A58B28500C0A8C7 /* Images.xcassets */,
 				48FE577A1A58B28500C0A8C7 /* LaunchScreen.xib */,
@@ -91,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				48FE57701A58B28500C0A8C7 /* Info.plist */,
+				488FFE501A5EC8F000E27DC5 /* API.plist */,
+				48FE579C1A58D9AE00C0A8C7 /* Alamofire.xcodeproj */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,6 +168,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		48FE579D1A58D9AE00C0A8C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48FE57A21A58D9AE00C0A8C7 /* Alamofire.framework */,
+				48FE57A41A58D9AE00C0A8C7 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +187,12 @@
 				48FE57681A58B28500C0A8C7 /* Sources */,
 				48FE57691A58B28500C0A8C7 /* Frameworks */,
 				48FE576A1A58B28500C0A8C7 /* Resources */,
+				48FE57A51A58D9D100C0A8C7 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				48FE57A81A58DA1800C0A8C7 /* PBXTargetDependency */,
 			);
 			name = PertInfo;
 			productName = PertInfo;
@@ -179,6 +246,12 @@
 			mainGroup = 48FE57631A58B28400C0A8C7;
 			productRefGroup = 48FE576D1A58B28500C0A8C7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 48FE579D1A58D9AE00C0A8C7 /* Products */;
+					ProjectRef = 48FE579C1A58D9AE00C0A8C7 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				48FE576B1A58B28500C0A8C7 /* PertInfo */,
@@ -187,12 +260,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		48FE57A21A58D9AE00C0A8C7 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 48FE57A11A58D9AE00C0A8C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48FE57A41A58D9AE00C0A8C7 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 48FE57A31A58D9AE00C0A8C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		48FE576A1A58B28500C0A8C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				48FE57771A58B28500C0A8C7 /* Main.storyboard in Resources */,
+				488FFE511A5EC8F000E27DC5 /* API.plist in Resources */,
 				48FE577C1A58B28500C0A8C7 /* LaunchScreen.xib in Resources */,
 				48FE57791A58B28500C0A8C7 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FE57741A58B28500C0A8C7 /* ViewController.swift in Sources */,
+				48FE57981A58B88800C0A8C7 /* PertInfo.swift in Sources */,
 				48FE57721A58B28500C0A8C7 /* AppDelegate.swift in Sources */,
+				48FE57961A58B6D800C0A8C7 /* PertInfoCell.swift in Sources */,
+				4862BEF61A58FF6A00025B1B /* SearchablePertInfoCollectionViewController.swift in Sources */,
+				48FE57921A58B2BF00C0A8C7 /* PertInfoCollectionViewController.swift in Sources */,
+				480C9F411A5BAE6100B92836 /* PertInfoDetailViewController.swift in Sources */,
+				4862BEF91A59D74D00025B1B /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +328,11 @@
 			isa = PBXTargetDependency;
 			target = 48FE576B1A58B28500C0A8C7 /* PertInfo */;
 			targetProxy = 48FE57821A58B28500C0A8C7 /* PBXContainerItemProxy */;
+		};
+		48FE57A81A58DA1800C0A8C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 48FE57A71A58DA1800C0A8C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -407,6 +508,7 @@
 				48FE578D1A58B28500C0A8C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48FE578E1A58B28500C0A8C7 /* Build configuration list for PBXNativeTarget "PertInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +517,7 @@
 				48FE57901A58B28500C0A8C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
